@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Practice</title>
+   <style>
+      .target {
+         border-radius: 50%;
+      }
+      .white {
+         background-color: white;
+         border: 2px solid black;
+         height: 500px;
+         width: 500px;
+         position: relative;
+      }
+      .black {
+         background-color: black;
+         height: 400px;
+         width: 400px;
+      }
+      .blue {
+         background-color: aqua;
+         height: 300px;
+         width: 300px;
+      }
+      .red {
+         background-color: red;
+         height: 200px;
+         width: 200px;
+      }
+      .center {
+         background-color: yellow;
+         height: 100px;
+         width: 100px;
+      }
+      .black, .blue, .red, .center {
+         position: absolute;
+         top: 50px;
+         left: 50px;
+      }
+   </style>
+</head>
+<body>
+   <div class="target white">
+      <div class="target black">
+         <div class="target blue">
+            <div class="target red">
+               <div class="target center"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>
