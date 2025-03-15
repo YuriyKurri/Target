@@ -3,69 +3,47 @@
 <head>
    <title>Practice</title>
    <style>
-      * {
-         margin: 0;
-         padding: 0;
-      }
       body {
-         color: aliceblue;
-         background-color: #20242D;
+         color: #20242D;
          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
-      #main {
-         margin: 50px;
+      .target {
+         border-radius: 50%;
       }
-      h1 {
-         margin-bottom: 50px;
-      }
-      h2 {
-         margin-bottom: 10px;
-      }
-      .block {
-         height: 150px;
-         width: 350px;
+      .white {
+         background-color: white;
+         border: 2px solid black;
+         height: 500px;
+         width: 500px;
          position: relative;
-         border-radius: 20px;
       }
-      .text {
-         position: absolute;
-         top: 25%;
-         left: 10%;
+      .black {
+         background-color: black;
+         height: 400px;
+         width: 400px;
       }
       .blue {
-         background-color: dodgerblue;
-         border: 2px solid rgb(170, 213, 255);
+         background-color: aqua;
+         height: 300px;
+         width: 300px;
       }
       .red {
-         background-color: lightcoral;
-         border: 2px solid rgb(255, 212, 212);
+         background-color: red;
+         height: 200px;
+         width: 200px;
       }
-      .green {
-         background-color: mediumseagreen;
-         border: 2px solid rgb(178, 247, 209);
+      .center {
+         background-color: yellow;
+         height: 100px;
+         width: 100px;
       }
-      .pink {
-         background-color: orchid;
-         border: 2px solid rgb(247, 203, 245);
-      }
-      .block.red {
+      .black, .blue, .red, .center {
          position: absolute;
-         top: 225px;
-         left: 250px;
-      }
-      .block.green {
-         position: absolute;
-         top: 300px;
-         left: 450px;
-      }
-      .block.pink {
-         position: absolute;
-         top: 375px;
-         left: 650px;
+         top: 50px;
+         left: 50px;
       }
       .code {
-         margin-left: 50px;
-         margin-top: 250px;
+         margin-top: 50px;
       }
       hr {
          width: 500px;
@@ -78,37 +56,20 @@
    </style>
 </head>
 <body>
-   <div id="main">
-      <h1>Overlapping Panels</h1>
-      <div class="block blue">
-         <div class="text">
-            <h2>Block 1</h2>
-            <p>Content for Block 1</p>
-         </div>
-      </div>
-      <div class="block red">
-         <div class="text">
-            <h2>Block 2</h2>
-            <p>Content for Block 2</p>
-         </div>
-      </div>
-      <div class="block green">
-         <div class="text">
-            <h2>Block 3</h2>
-            <p>Content for Block 3</p>
-         </div>
-      </div>
-      <div class="block pink">
-         <div class="text">
-            <h2>Block 4</h2>
-            <p>Content for Block 4</p>
+   <div class="target white">
+      <div class="target black">
+         <div class="target blue">
+            <div class="target red">
+               <div class="target center"></div>
+            </div>
          </div>
       </div>
    </div>
+
    <div class="code">
       <hr>
-      <h2>CODE</h2>
-      <img class="link" src="code.png" alt="" width="800px">
+      <h2>CODE:</h2>
+      <img class="link" src="code.png" alt="" width="750px">
    </div>
 </body>
 </html>
